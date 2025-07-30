@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "prisma generate && vite build",
+    "build": "prisma generate && react-router build",
     "postinstall": "prisma generate",
-    "dev": "vite",
-    "preview": "vite preview",
+    "dev": "react-router dev",
+    "preview": "react-router serve",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
