@@ -1,13 +1,4 @@
 {
   "framework": "react-router",
-  "buildCommand": "npm run vercel-build",
-  "functions": {
-    "build/server/nodejs_**/index.js": {
-      "memory": 1024,
-      "maxDuration": 30
-    }
-  },
-  "env": {
-    "ENABLE_VC_BUILD": "1"
-  }
+  "buildCommand": "npm run vercel-build"
 }
