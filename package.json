@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "prisma generate && next build",
+    "build": "prisma generate && vite build",
     "postinstall": "prisma generate",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
