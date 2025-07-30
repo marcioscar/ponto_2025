@@ -2,13 +2,13 @@
   "name": "",
   "private": true,
   "type": "module",
-  "scripts": {
-    "build": "prisma generate && vite build",
-    "postinstall": "prisma generate",
-    "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
-  },
+ "scripts": {
+  "build": "prisma generate && vite build",
+  "postinstall": "prisma generate",
+  "dev": "vite",
+  "preview": "vite preview",
+  "typecheck": "react-router typegen && tsc"
+},
   "dependencies": {
     "@conform-to/react": "^1.8.2",
     "@conform-to/zod": "^1.8.2",
