@@ -6,6 +6,12 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
   ssr: {
-    noExternal: ["@prisma/client", "bcryptjs"],
+    noExternal: ["@prisma/client", "bcryptjs", ".prisma/client"],
+  },
+  define: {
+    global: "globalThis",
+  },
+  optimizeDeps: {
+    exclude: ["@prisma/client"],
   },
 });
